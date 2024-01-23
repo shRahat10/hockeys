@@ -15,6 +15,14 @@
         .manrope {
             font-family: 'Manrope', sans-serif;
         }
+
+        .radial-progress:after {
+            display: none;
+        }
+
+        .card-bg {
+            background: rgba(19, 19, 24, 0.50);
+        }
     </style>
     <script>
         tailwind.config = {
@@ -30,9 +38,9 @@
     </script>
 </head>
 
-<body class="manrope max-w-[1440px] mx-auto">
-    <header>
-        <nav class="flex justify-between items-center py-10 px-4 lg:px-20">
+<body class="manrope max-w-[1440px] mx-auto space-y-10 lg:space-y-20">
+    <header class="px-4 lg:px-20">
+        <nav class="flex justify-between items-center py-10">
             <div class="flex items-center gap-2">
                 <div class="lg:hidden dropdown dropdown-start">
                     <div tabindex="0">
@@ -81,13 +89,15 @@
                 <button class="btn bg-customOne text-white text-lg px-4 lg:px-6">Get Ticket</button>
             </div>
         </nav>
-        <section class="px-4 lg:px-20">
+        <section>
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full flex flex-col gap-4">
-                    <img src="./Images/1.png" class="w-full rounded-lg"/>
-                    <div class="lg:w-[450px] h-max bg-black rounded-lg text-white p-8 lg:absolute lg:right-10 lg:bottom-10">
+                    <img src="./Images/1.png" class="w-full rounded-lg" />
+                    <div
+                        class="lg:w-[450px] h-max bg-black rounded-lg text-white p-8 lg:absolute lg:right-10 lg:bottom-10">
                         <h1 class="text-base font-bold">History of Hockey</h1>
-                        <p class="text-xs">Explore the roots and evolution of hockey, from its ancient origins to the modern and highly competitive sport it is today</p>
+                        <p class="text-xs">Explore the roots and evolution of hockey, from its ancient origins to the
+                            modern and highly competitive sport it is today</p>
                     </div>
                     <div
                         class="absolute flex justify-center gap-4 lg:justify-between transform lg:-translate-y-1/2 left-5 right-5 top-[40%] md:top-[60%] lg:top-1/2">
@@ -108,10 +118,12 @@
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full flex flex-col gap-4">
-                    <img src="./Images/1-1.jpg" class="w-full rounded-lg"/>
-                    <div class="lg:w-[450px] h-max bg-black rounded-lg text-white p-8 lg:absolute lg:right-10 lg:bottom-10">
+                    <img src="./Images/1-1.jpg" class="w-full rounded-lg" />
+                    <div
+                        class="lg:w-[450px] h-max bg-black rounded-lg text-white p-8 lg:absolute lg:right-10 lg:bottom-10">
                         <h1 class="text-base font-bold">Famous Hockey Moments</h1>
-                        <p class="text-xs">Relive memorable moments in hockey history, spotlighting iconic goals, legendary players, and unforgettable plays that have defined the game</p>
+                        <p class="text-xs">Relive memorable moments in hockey history, spotlighting iconic goals,
+                            legendary players, and unforgettable plays that have defined the game</p>
                     </div>
                     <div
                         class="absolute flex justify-center gap-4 lg:justify-between transform lg:-translate-y-1/2 left-5 right-5 top-[40%] md:top-[60%] lg:top-1/2">
@@ -132,10 +144,12 @@
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full flex flex-col gap-4">
-                    <img src="./Images/1-2.jpg" class="w-full rounded-lg"/>
-                    <div class="lg:w-[450px] h-max bg-black rounded-lg text-white p-8 lg:absolute lg:right-10 lg:bottom-10">
+                    <img src="./Images/1-2.jpg" class="w-full rounded-lg" />
+                    <div
+                        class="lg:w-[450px] h-max bg-black rounded-lg text-white p-8 lg:absolute lg:right-10 lg:bottom-10">
                         <h1 class="text-base font-bold">Hockey for Beginners</h1>
-                        <p class="text-xs">A beginner-friendly overview of hockey, covering the basics, positions, and key rules to help newcomers grasp the essentials of the game</p>
+                        <p class="text-xs">A beginner-friendly overview of hockey, covering the basics, positions, and
+                            key rules to help newcomers grasp the essentials of the game</p>
                     </div>
                     <div
                         class="absolute flex justify-center gap-4 lg:justify-between transform lg:-translate-y-1/2 left-5 right-5 top-[40%] md:top-[60%] lg:top-1/2">
@@ -158,9 +172,81 @@
             </div>
         </section>
     </header>
-    <main>
-        <section>
-            
+    <main class="px-4 lg:px-20 space-y-20">
+        <section class="space-y-10">
+            <div class="space-y-5">
+                <h1 class="text-4xl font-bold text-center">Professional Hockey Club</h1>
+                <p class="text-center">Pro hockey clubs are top-tier teams where skilled players compete for
+                    glory,<br>showcasing their talent in thrilling matches that captivate fans worldwide</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="flex flex-col flex-1 items-center">
+                    <div class="radial-progress rotate-[135deg] text-red-500 h-32 w-32" style="--value:87;"
+                        role="progressbar"><span class="rotate-[-135deg] text-black font-bold text-3xl">87%</span></div>
+                    <h1 class="text-xl font-bold">Player Facility</h1>
+                    <p class="text-center">Modern and comfortable facilities designed for players, ensuring an optimal
+                        environment</p>
+                </div>
+                <div class="flex flex-col flex-1 items-center">
+                    <div class="radial-progress rotate-[135deg] text-green-500 h-32 w-32" style="--value:95;"
+                        role="progressbar"><span class="rotate-[-135deg] text-black font-bold text-3xl">95%</span></div>
+                    <h1 class="text-xl font-bold">Experienced Coach</h1>
+                    <p class="text-center">A seasoned coach imparts wisdom, strategy, and leadership, elevating the
+                        team's performance</p>
+                </div>
+                <div class="flex flex-col flex-1 items-center">
+                    <div class="radial-progress rotate-[135deg] text-yellow-500 h-32 w-32" style="--value:90;"
+                        role="progressbar"><span class="rotate-[-135deg] text-black font-bold text-3xl">90%</span></div>
+                    <h1 class="text-xl font-bold">Senior Player</h1>
+                    <p class="text-center">An experienced senior player brings leadership and on-field expertise,
+                        crucial for team success</p>
+                </div>
+                <div class="flex flex-col flex-1 items-center">
+                    <div class="radial-progress rotate-[135deg] text-blue-500 h-32 w-32" style="--value:80;"
+                        role="progressbar"><span class="rotate-[-135deg] text-black font-bold text-3xl">80%</span></div>
+                    <h1 class="text-xl font-bold">Training Ground</h1>
+                    <p class="text-center">The training ground is where skills are refined, teamwork is strengthened,
+                        and success is built</p>
+                </div>
+            </div>
+        </section>
+        <section class="space-y-10">
+            <div class="space-y-5">
+                <h1 class="text-4xl font-bold text-center">Program Sections</h1>
+                <p class="text-center">Program sections provide organized segments for focused learning and
+                    engagement,<br>ensuring a structured and effective approach to the overall initiative.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
+                <div class="h-80 w-full lg:w-1/2 rounded-xl bg-cover bg-center bg-no-repeat"
+                    style="background-image: url(./Images/2.png);">
+                    <div class="h-80 bg-black bg-opacity-40 rounded-xl flex flex-col justify-end pb-10 px-10 space-y-3">
+                        <h2 class="card-title text-white">Junior Program</h2>
+                        <p class="text-white">The junior program nurtures young talents, fostering skill development,
+                            teamwork, and a love for the sport in a supportive and dynamic environment.</p>
+                        <button class="btn btn-primary bg-customOne border-none text-white w-44">Register Now!</button>
+                    </div>
+                </div>
+                <div class="h-80 w-full lg:w-1/2 rounded-xl bg-cover bg-center bg-no-repeat"
+                    style="background-image: url(./Images/3.png);">
+                    <div class="h-80 bg-black bg-opacity-40 rounded-xl flex flex-col justify-end pb-10 px-10 space-y-3">
+                        <h2 class="card-title text-white">Teenager Program</h2>
+                        <p class="text-white">Tailored for teens, the program emphasizes skill enhancement, character
+                            development, and teamwork, providing a platform for holistic growth both on and off the
+                            field.</p>
+                        <button class="btn btn-primary bg-customOne border-none text-white w-44">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="h-80 lg:h-[400px] w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                style="background-image: url(./Images/4.png);">
+                <div
+                    class="h-80 lg:h-[400px] bg-black bg-opacity-40 rounded-xl flex flex-col justify-end pb-10 px-10 space-y-3">
+                    <h2 class="card-title text-white">Professional Program</h2>
+                    <p class="text-white w-full lg:w-[460px]">The professional program hones elite skills, strategy, and
+                        performance for athletes competing at the highest level.</p>
+                    <button class="btn btn-primary bg-customOne border-none text-white w-44">Register Now!</button>
+                </div>
+            </div>
         </section>
     </main>
 </body>
